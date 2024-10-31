@@ -51,7 +51,7 @@ export default {
     }
   },
   methods: {
-    handleLikePost(postId) {
+    handleLikePost(postId: number) {
       const post = this.blogPosts.find(p => p.id === postId)
       if (post) {
         post.likes += 1
